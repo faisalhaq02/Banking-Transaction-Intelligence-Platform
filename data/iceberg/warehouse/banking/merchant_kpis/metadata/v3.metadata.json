@@ -1,0 +1,159 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "19308409-a9d8-4103-a575-3bc94132118c",
+  "location" : "/opt/project/data/iceberg/warehouse/banking/merchant_kpis",
+  "last-sequence-number" : 3,
+  "last-updated-ms" : 1772760557863,
+  "last-column-id" : 7,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "merchant_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "txn_count",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 3,
+      "name" : "total_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 4,
+      "name" : "avg_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "high_risk_rate",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 6,
+      "name" : "approval_rate",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 7,
+      "name" : "event_date",
+      "required" : false,
+      "type" : "date"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 7268855466136040075,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 7268855466136040075,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 9059238877804203947,
+    "timestamp-ms" : 1772760246082,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1772758786499",
+      "added-data-files" : "1",
+      "added-records" : "900",
+      "added-files-size" : "29844",
+      "changed-partition-count" : "1",
+      "total-records" : "900",
+      "total-files-size" : "29844",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/opt/project/data/iceberg/warehouse/banking/merchant_kpis/metadata/snap-9059238877804203947-1-f2c2dc8f-f3a9-485d-9e3b-2877d6b0e10e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 5952054425715393903,
+    "parent-snapshot-id" : 9059238877804203947,
+    "timestamp-ms" : 1772760424546,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1772758786499",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "900",
+      "deleted-records" : "900",
+      "added-files-size" : "28410",
+      "removed-files-size" : "29844",
+      "changed-partition-count" : "1",
+      "total-records" : "900",
+      "total-files-size" : "28410",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/opt/project/data/iceberg/warehouse/banking/merchant_kpis/metadata/snap-5952054425715393903-1-82f4c8db-97a4-4ad4-8d56-7476e21f1fe5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 7268855466136040075,
+    "parent-snapshot-id" : 5952054425715393903,
+    "timestamp-ms" : 1772760557863,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1772758786499",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "900",
+      "deleted-records" : "900",
+      "added-files-size" : "28410",
+      "removed-files-size" : "28410",
+      "changed-partition-count" : "1",
+      "total-records" : "900",
+      "total-files-size" : "28410",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/opt/project/data/iceberg/warehouse/banking/merchant_kpis/metadata/snap-7268855466136040075-1-95a4d661-b6b6-43a9-8e85-62fb6c883cdb.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1772760246082,
+    "snapshot-id" : 9059238877804203947
+  }, {
+    "timestamp-ms" : 1772760424546,
+    "snapshot-id" : 5952054425715393903
+  }, {
+    "timestamp-ms" : 1772760557863,
+    "snapshot-id" : 7268855466136040075
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1772760246082,
+    "metadata-file" : "/opt/project/data/iceberg/warehouse/banking/merchant_kpis/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1772760424546,
+    "metadata-file" : "/opt/project/data/iceberg/warehouse/banking/merchant_kpis/metadata/v2.metadata.json"
+  } ]
+}

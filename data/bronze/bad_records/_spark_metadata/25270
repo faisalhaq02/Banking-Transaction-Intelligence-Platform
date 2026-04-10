@@ -1,0 +1,2 @@
+v1
+{"path":"file:///opt/spark-data/bronze/bad_records/part-00000-7daeb450-69cb-4362-8a98-5fab6d7a05ea-c000.json","size":0,"isDir":false,"modificationTime":1769637500941,"blockReplication":1,"blockSize":33554432,"action":"add"}

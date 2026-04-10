@@ -1,0 +1,30 @@
+{
+  "train_rows": 7200,
+  "test_rows": 1800,
+  "mae": 1105.1406947939233,
+  "rmse": 2692.069486844114,
+  "r2": 0.998350396865764,
+  "target_column": "total_spend",
+  "numeric_feature_columns": [
+    "txn_count",
+    "avg_amount",
+    "max_amount",
+    "max_to_avg_ratio",
+    "amount_range"
+  ],
+  "categorical_feature_columns": [
+    "customer_segment"
+  ],
+  "final_feature_columns": [
+    "txn_count",
+    "avg_amount",
+    "max_amount",
+    "max_to_avg_ratio",
+    "amount_range",
+    "customer_segment_0",
+    "customer_segment_1",
+    "customer_segment_2"
+  ],
+  "model_type": "RandomForestRegressor",
+  "note": "Leakage-safe version excluding spend_per_txn_ratio and txn_intensity."
+}

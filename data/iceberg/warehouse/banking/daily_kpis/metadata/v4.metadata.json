@@ -1,0 +1,179 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "1c2da96d-3847-4fd8-ac82-761a99221837",
+  "location" : "/opt/project/data/iceberg/warehouse/banking/daily_kpis",
+  "last-sequence-number" : 4,
+  "last-updated-ms" : 1772762447152,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "txn_count",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "total_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 3,
+      "name" : "approval_rate",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 4,
+      "name" : "high_risk_rate",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "event_date",
+      "required" : false,
+      "type" : "date"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 8076364712527736806,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 8076364712527736806,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 7912662409215188307,
+    "timestamp-ms" : 1772760237354,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1772758786499",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1538",
+      "changed-partition-count" : "1",
+      "total-records" : "1",
+      "total-files-size" : "1538",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/opt/project/data/iceberg/warehouse/banking/daily_kpis/metadata/snap-7912662409215188307-1-00a0004a-eef0-4230-81c9-cc12f1a8d381.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 4324159116221954411,
+    "parent-snapshot-id" : 7912662409215188307,
+    "timestamp-ms" : 1772760382733,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1772758786499",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "1",
+      "deleted-records" : "1",
+      "added-files-size" : "1538",
+      "removed-files-size" : "1538",
+      "changed-partition-count" : "1",
+      "total-records" : "1",
+      "total-files-size" : "1538",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/opt/project/data/iceberg/warehouse/banking/daily_kpis/metadata/snap-4324159116221954411-1-8f346288-06d7-4b4c-bf7d-80785e614ccb.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 4792609462355418058,
+    "parent-snapshot-id" : 4324159116221954411,
+    "timestamp-ms" : 1772760546752,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1772758786499",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "1",
+      "deleted-records" : "1",
+      "added-files-size" : "1538",
+      "removed-files-size" : "1538",
+      "changed-partition-count" : "1",
+      "total-records" : "1",
+      "total-files-size" : "1538",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/opt/project/data/iceberg/warehouse/banking/daily_kpis/metadata/snap-4792609462355418058-1-5543e756-32a0-4c13-a671-55af97d7a203.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 4,
+    "snapshot-id" : 8076364712527736806,
+    "parent-snapshot-id" : 4792609462355418058,
+    "timestamp-ms" : 1772762447152,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1772762345291",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "1",
+      "deleted-records" : "1",
+      "added-files-size" : "1538",
+      "removed-files-size" : "1538",
+      "changed-partition-count" : "1",
+      "total-records" : "1",
+      "total-files-size" : "1538",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/opt/project/data/iceberg/warehouse/banking/daily_kpis/metadata/snap-8076364712527736806-1-0a53ebee-037a-497d-bc2e-01dcf22d32f5.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1772760237354,
+    "snapshot-id" : 7912662409215188307
+  }, {
+    "timestamp-ms" : 1772760382733,
+    "snapshot-id" : 4324159116221954411
+  }, {
+    "timestamp-ms" : 1772760546752,
+    "snapshot-id" : 4792609462355418058
+  }, {
+    "timestamp-ms" : 1772762447152,
+    "snapshot-id" : 8076364712527736806
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1772760237354,
+    "metadata-file" : "/opt/project/data/iceberg/warehouse/banking/daily_kpis/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1772760382733,
+    "metadata-file" : "/opt/project/data/iceberg/warehouse/banking/daily_kpis/metadata/v2.metadata.json"
+  }, {
+    "timestamp-ms" : 1772760546752,
+    "metadata-file" : "/opt/project/data/iceberg/warehouse/banking/daily_kpis/metadata/v3.metadata.json"
+  } ]
+}

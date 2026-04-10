@@ -1,0 +1,31 @@
+{
+  "total_customers_scored": 9000,
+  "feature_columns": [
+    "txn_count",
+    "total_spend",
+    "avg_amount",
+    "max_amount",
+    "spend_per_txn_ratio",
+    "max_to_avg_ratio",
+    "amount_range",
+    "txn_intensity"
+  ],
+  "contamination": 0.03,
+  "iforest_anomalies": 270,
+  "lof_anomalies": 270,
+  "ocsvm_anomalies": 275,
+  "ensemble_anomalies": 236,
+  "ensemble_anomaly_rate": 0.026222222222222223,
+  "severity_distribution": {
+    "Normal": 8532,
+    "Mildly Unusual": 232,
+    "Strongly Unusual": 125,
+    "Highly Unusual": 111
+  },
+  "ensemble_rule": "ensemble_anomaly_flag = 1 when at least 2 of 3 models flag anomaly",
+  "ensemble_score_weights": {
+    "iforest_score": 0.5,
+    "lof_score": 0.3,
+    "ocsvm_score": 0.2
+  }
+}

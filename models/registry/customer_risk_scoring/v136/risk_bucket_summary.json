@@ -1,0 +1,28 @@
+{
+  "total_customers_scored": 9000,
+  "risk_bucket_distribution": {
+    "Medium Risk": 8321,
+    "Low Risk": 395,
+    "High Risk": 284
+  },
+  "average_risk_score": 0.4735604894392872,
+  "high_risk_rate": 0.03155555555555556,
+  "score_weights": {
+    "txn_count_score": 0.12,
+    "total_spend_score": 0.22,
+    "avg_amount_score": 0.1,
+    "max_amount_score": 0.16,
+    "txn_intensity_score": 0.12,
+    "anomaly_vote_score": 0.12,
+    "anomaly_strength_score": 0.08,
+    "segment_risk_score": 0.08
+  },
+  "segment_risk_map": {
+    "Low Activity Customers": 0.1,
+    "Regular Customers": 0.25,
+    "High Value Customers": 0.55,
+    "Extreme Spenders": 0.8,
+    "Elite Customers": 0.85,
+    "Premium Customers": 0.7
+  }
+}

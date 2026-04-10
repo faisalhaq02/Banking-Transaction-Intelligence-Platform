@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "2026-04-10T22:04:16.714317+00:00",
+  "should_retrain": true,
+  "drift_status": "high_drift_detected",
+  "spend_prediction_r2": 0.9986663742663839,
+  "rules": {
+    "high_drift_detected": true,
+    "min_spend_prediction_r2": 0.95
+  },
+  "reasons": [
+    "High drift detected in latest monitoring report."
+  ]
+}

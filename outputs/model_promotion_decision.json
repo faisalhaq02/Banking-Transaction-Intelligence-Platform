@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "2026-04-10T22:04:28.739502+00:00",
+  "model_name": "spend_prediction",
+  "latest_version": "v310",
+  "production_version_before_decision": "v30",
+  "production_version_after_decision": "v30",
+  "latest_r2": 0.9986663742663839,
+  "production_r2_before_decision": 0.9986667971831785,
+  "should_promote": false,
+  "reasons": [
+    "Keeping current production version because latest R2 (0.998666) <= production R2 (0.998667)."
+  ]
+}

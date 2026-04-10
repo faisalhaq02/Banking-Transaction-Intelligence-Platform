@@ -1,0 +1,2 @@
+v1
+{"path":"file:///opt/spark-data/bronze/transactions/date=2026-01-28/hour=21/part-00000-ae37c480-15e8-4803-b6f1-1da206640f31.c000.snappy.parquet","size":2708789,"isDir":false,"modificationTime":1769636910321,"blockReplication":1,"blockSize":33554432,"action":"add"}

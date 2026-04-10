@@ -1,0 +1,10 @@
+spark.sql.extensions=org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions
+
+spark.hadoop.hive.metastore.uris=thrift://hive-metastore:9083
+
+spark.sql.catalog.lakehouse=org.apache.iceberg.spark.SparkCatalog
+spark.sql.catalog.lakehouse.type=hive
+spark.sql.catalog.lakehouse.uri=thrift://hive-metastore:9083
+spark.sql.catalog.lakehouse.warehouse=/opt/project/data/iceberg/warehouse
+
+spark.sql.defaultCatalog=lakehouse

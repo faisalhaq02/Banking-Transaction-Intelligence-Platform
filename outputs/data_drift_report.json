@@ -1,0 +1,133 @@
+{
+  "generated_at_utc": "2026-04-10T22:04:15.877435+00:00",
+  "status": "high_drift_detected",
+  "current_run_timestamp_utc": "2026-04-10T22:04:10.628025+00:00",
+  "previous_run_timestamp_utc": "2026-04-10T21:49:37.410006+00:00",
+  "metric_changes": {
+    "ensemble_anomaly_rate": {
+      "current": 0.026333333333333334,
+      "previous": 0.0263333333333333,
+      "relative_change": 1.3175115007418806e-15,
+      "absolute_change": 3.469446951953614e-17,
+      "level": "stable"
+    },
+    "high_risk_rate": {
+      "current": 0.030333333333333334,
+      "previous": 0.0305555555555555,
+      "relative_change": -0.007272727272725425,
+      "absolute_change": -0.00022222222222216537,
+      "level": "stable"
+    },
+    "average_risk_score": {
+      "current": 0.4735271561059538,
+      "previous": 0.4735707116615093,
+      "relative_change": -9.197265473345154e-05,
+      "absolute_change": -4.355555555551893e-05,
+      "level": "stable"
+    },
+    "spend_prediction_mae": {
+      "current": 1105.5666319445943,
+      "previous": 1086.9434749041582,
+      "relative_change": 0.017133510132234093,
+      "absolute_change": 18.623157040436126,
+      "level": "stable"
+    },
+    "spend_prediction_rmse": {
+      "current": 2461.515637081489,
+      "previous": 2763.6295955808514,
+      "relative_change": -0.10931781848857539,
+      "absolute_change": -302.1139584993625,
+      "level": "moderate"
+    },
+    "spend_prediction_r2": {
+      "current": 0.9986663742663839,
+      "previous": 0.998305155088626,
+      "relative_change": 0.00036183242760658683,
+      "absolute_change": 0.0003612191777578877,
+      "level": "stable"
+    }
+  },
+  "segment_distribution_drift": {
+    "details": {
+      "High Value Customers": {
+        "current_share": 0.4292222222222222,
+        "previous_share": 0.0,
+        "delta": 0.4292222222222222
+      },
+      "Low Activity Customers": {
+        "current_share": 0.4266666666666667,
+        "previous_share": 0.0,
+        "delta": 0.4266666666666667
+      },
+      "Regular Customers": {
+        "current_share": 0.1441111111111111,
+        "previous_share": 0.0,
+        "delta": 0.1441111111111111
+      }
+    },
+    "max_absolute_share_change": 0.4292222222222222,
+    "level": "high"
+  },
+  "risk_bucket_drift": {
+    "details": {
+      "High Risk": {
+        "current_share": 0.030333333333333334,
+        "previous_share": 0.0,
+        "delta": 0.030333333333333334
+      },
+      "Low Risk": {
+        "current_share": 0.04055555555555555,
+        "previous_share": 0.0,
+        "delta": 0.04055555555555555
+      },
+      "Medium Risk": {
+        "current_share": 0.9291111111111111,
+        "previous_share": 0.0,
+        "delta": 0.9291111111111111
+      }
+    },
+    "max_absolute_share_change": 0.9291111111111111,
+    "level": "high"
+  },
+  "severity_distribution_drift": {
+    "details": {
+      "Highly Unusual": {
+        "current_share": 0.012222222222222223,
+        "previous_share": 0.0,
+        "delta": 0.012222222222222223
+      },
+      "Mildly Unusual": {
+        "current_share": 0.025111111111111112,
+        "previous_share": 0.0,
+        "delta": 0.025111111111111112
+      },
+      "Normal": {
+        "current_share": 0.9485555555555556,
+        "previous_share": 0.0,
+        "delta": 0.9485555555555556
+      },
+      "Strongly Unusual": {
+        "current_share": 0.01411111111111111,
+        "previous_share": 0.0,
+        "delta": 0.01411111111111111
+      }
+    },
+    "max_absolute_share_change": 0.9485555555555556,
+    "level": "high"
+  },
+  "overall_flags": {
+    "segment_distribution_drift": "high",
+    "risk_bucket_drift": "high",
+    "severity_distribution_drift": "high",
+    "anomaly_rate_drift": "stable",
+    "high_risk_rate_drift": "stable",
+    "average_risk_score_drift": "stable",
+    "spend_mae_drift": "stable",
+    "spend_rmse_drift": "moderate",
+    "spend_r2_drift": "stable"
+  },
+  "summary": {
+    "high_flags": 3,
+    "moderate_flags": 1
+  }
+}

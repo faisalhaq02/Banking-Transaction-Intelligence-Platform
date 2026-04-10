@@ -1,0 +1,27 @@
+{
+  "best_k": 3,
+  "silhouette_scores": {
+    "2": 0.2872885269269477,
+    "3": 0.30754020127106546,
+    "4": 0.2521303894898028,
+    "5": 0.25946634750316766,
+    "6": 0.2610460390924284
+  },
+  "selected_silhouette_score": 0.30754020127106546,
+  "num_customers": 18000,
+  "feature_columns": [
+    "txn_count",
+    "total_spend",
+    "avg_amount",
+    "max_amount",
+    "spend_per_txn_ratio",
+    "max_to_avg_ratio",
+    "amount_range",
+    "txn_intensity"
+  ],
+  "segment_name_map": {
+    "1": "Low Activity Customers",
+    "2": "Regular Customers",
+    "0": "High Value Customers"
+  }
+}

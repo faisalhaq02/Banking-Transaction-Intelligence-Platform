@@ -1,0 +1,94 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "6c14761c-4bab-43c2-ae61-29225e907d2f",
+  "location" : "/opt/project/data/iceberg/warehouse/banking/customer_features",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1772760237667,
+  "last-column-id" : 6,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "customer_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "txn_count",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 3,
+      "name" : "total_spend",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 4,
+      "name" : "avg_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "max_amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 6,
+      "name" : "event_date",
+      "required" : false,
+      "type" : "date"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 8366165012886421701,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 8366165012886421701,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 8366165012886421701,
+    "timestamp-ms" : 1772760237667,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1772758786499",
+      "added-data-files" : "1",
+      "added-records" : "9000",
+      "added-files-size" : "173429",
+      "changed-partition-count" : "1",
+      "total-records" : "9000",
+      "total-files-size" : "173429",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/opt/project/data/iceberg/warehouse/banking/customer_features/metadata/snap-8366165012886421701-1-7b222e7a-af09-45bd-b02d-4eff55d140e8.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1772760237667,
+    "snapshot-id" : 8366165012886421701
+  } ],
+  "metadata-log" : [ ]
+}

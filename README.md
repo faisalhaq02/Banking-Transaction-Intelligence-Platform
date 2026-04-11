@@ -33,17 +33,16 @@ The platform enables **real-time monitoring, risk detection, and business intell
 
 ## 🔗 Project Links
 
-### 📂 Code Repository
+### Code Repository
 
 https://github.com/YOUR_USERNAME/banking-transaction-intelligence-platform
 
-### 📦 Full Project Download (Backup)
+### Full Project Download (Backup)
 
-https://drive.google.com/YOUR_PROJECT_LINK
+https://drive.google.com/file/d/1g8MpLdHdomAwMdZoPDPenqAinD2yN1-M/view?usp=share_link
 
-### 📊 Dataset Download
-
-https://drive.google.com/YOUR_DATASET_LINK
+### Dataset Download
+https://drive.google.com/file/d/1g8MpLdHdomAwMdZoPDPenqAinD2yN1-M/view?usp=share_link
 
 ---
 

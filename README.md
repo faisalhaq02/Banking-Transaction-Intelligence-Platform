@@ -82,5 +82,111 @@ Notes:
 ## Setup Instructions
 
 ### 1. Clone Repository
+git clone https://github.com/faisalhaq02/Real-Time-Banking-Transaction-Intelligence-Platform-Using-Streaming-and-Lakehouse-Architecture.git
+cd Real-Time-Banking-Transaction-Intelligence-Platform-Using-Streaming-and-Lakehouse-Architecture
 
+### 2. Create Virtual Environment
+python3 -m venv airflow_venv
+source airflow_venv/bin/activate
 
+### 3. Install Dependencies
+pip install -r requirements.txt
+
+---
+
+## Run the Project
+
+### Start Services
+docker compose up -d
+
+### Run Producer
+python producer/transaction_producer_v2.py
+
+### Run Consumer
+python consumer/consumer_file.py
+
+### Run Airflow
+cd airflow_docker
+docker-compose up
+
+Open Airflow UI:
+http://localhost:8080
+
+Trigger DAGs manually
+
+---
+
+### Run Machine Learning
+python ml/train_models.py
+
+---
+
+### Run Chatbot
+python agentic_ai/app.py
+
+---
+
+## 🤖 Machine Learning Models
+
+- KMeans + PCA → Customer Segmentation  
+- Isolation Forest / LOF / One-Class SVM → Anomaly Detection  
+- Random Forest → Risk Scoring  
+
+---
+
+## 📊 Tableau Dashboards
+
+Located in `/tableau`
+
+- Executive Dashboard  
+- Real-Time Dashboard  
+- Geography Dashboard  
+
+---
+
+## 📊 Dataset Usage
+
+Download dataset:
+https://drive.google.com/file/d/1Xa-Lte88z_kCO4P5ntrdEVGb3kNzulxs/view?usp=sharing
+
+Extract:
+
+unzip banking-dataset.zip
+
+Move:
+mv dataset_folder data/
+
+---
+
+## 📈 Outputs
+
+- Transaction data  
+- Azure Blob Storage files  
+- Azure SQL tables  
+- ML predictions  
+- BI summaries  
+- Dashboards  
+
+---
+
+## ⚠️ Notes
+
+- `.env` is excluded  
+- Use your own credentials  
+- Ensure Docker and Kafka are running  
+
+---
+
+## Authors
+
+Faisal Ul Haque Mohammed  
+Darshil K Shah  
+
+Master of Applied Computing  
+Wilfrid Laurier University  
+
+---
+
+## Conclusion
+
+This project demonstrates a **production-level data engineering system** integrating streaming, batch processing, machine learning, and cloud-based analytics for banking intelligence.
